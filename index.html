@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PROMO-HUB | Bring Yo Brand to Life</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0a1f4d;--ink2:#44527a;--sun:#ff7a1a;--sun-d:#e86a0a;--red:#d93a2b;--paper:#f2f5fb;--card:#fff;--line:#dbe2f0;--ok:#1d8a55;
+--display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;--body:'Figtree','Segoe UI',system-ui,sans-serif}
+*{box-sizing:border-box}
+html{scroll-padding-top:70px}
+body{margin:0;font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.55}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0}
+.bar{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff;display:flex;align-items:center;gap:18px;padding:10px 5%}
+.brand{font-family:var(--display);font-weight:800;font-size:22px;text-decoration:none;color:#fff;white-space:nowrap;display:flex;align-items:center;gap:8px;text-transform:uppercase}.brand b{color:var(--sun)}
+.nav{display:flex;gap:4px;overflow-x:auto;flex:1;scrollbar-width:none}
+.nav a{color:#dfe7e3;text-decoration:none;padding:7px 12px;border-radius:99px;font-size:14px;white-space:nowrap;font-weight:500}
+.nav a:hover,.nav a[aria-current=page]{background:rgba(255,255,255,.12);color:#fff}
+.nav a.cta{background:var(--sun);color:var(--ink);font-weight:700}
+.who{font-size:13px;color:#b9c6c0;white-space:nowrap}
+.hide{display:none!important}
+main>section{display:none;padding:32px 5% 60px;max-width:1200px;margin:0 auto}
+main>section.on{display:block}
+/* hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#0a1f4d 20%,#13409f);color:#fff;border-radius:20px;padding:56px 6% 48px;margin-bottom:32px}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35}
+.hero:before{content:"";position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;background:var(--sun);opacity:.9}
+.hero>*{position:relative}
+.hero h1{font-size:clamp(34px,6vw,60px);font-weight:800;max-width:14ch;letter-spacing:-.02em}
+.hero h1 span{color:var(--sun)}
+.hero p{max-width:46ch;color:#d5dfda;font-size:18px;margin:14px 0 24px}
+.find{display:grid;grid-template-columns:1.6fr 1fr 1fr auto;gap:8px;max-width:860px;background:#fff;border-radius:16px;padding:8px}
+.find input,.find select{border:0;background:var(--paper);color:var(--ink);padding:12px 14px;border-radius:10px}
+.find button{margin:0;width:auto;padding:12px 24px;border-radius:10px}
+.tg{color:var(--sun);font-weight:700;margin:0 0 10px}
+.btn{display:inline-block;margin-top:16px;background:var(--sun);color:var(--ink);font-weight:700;padding:12px 22px;border-radius:12px;text-decoration:none}
+.tools{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:18px}
+.off{position:absolute;right:10px;bottom:12px;background:var(--red);color:#fff;font-weight:700;font-size:12px;padding:3px 9px;border-radius:99px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px}.kpis div{background:var(--paper);border-radius:10px;padding:10px;text-align:center;font-size:12px}.kpis b{display:block;font-family:var(--display);font-size:22px}
+.bar2{height:8px;background:var(--line);border-radius:9px;margin-top:4px}.bar2 i{display:block;height:100%;background:var(--sun);border-radius:9px}
+.sec2{border-bottom:1px solid var(--line);padding:10px 0;font-size:14px}
+.bz{display:grid;place-items:center;font-family:var(--display);font-size:54px;font-weight:800;color:var(--sun);background:var(--ink)}
+.bz img{width:100%;height:100%;object-fit:cover}
+.verified{background:var(--ok);color:#fff;font-size:12px;padding:2px 9px;border-radius:99px;font-weight:700;margin-left:6px}
+@media(max-width:760px){.tools,.kpis{grid-template-columns:1fr 1fr}}
+.sech{font-size:26px;margin:8px 0 16px}
+.sec{margin-bottom:36px}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:12px 0 36px}
+.how div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}.how b{font-family:var(--display);font-size:19px;display:block;margin-bottom:4px}
+.grow{background:linear-gradient(135deg,#0a1f4d,#13409f);color:#fff;border-radius:20px;padding:36px 6%;display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.grow h2{font-size:28px;max-width:20ch}.grow p{margin:6px 0 0;color:#d0dbf3;max-width:48ch}.grow .btn{margin:0}
+@media(max-width:760px){.find{grid-template-columns:1fr}.find button{width:100%}}
+.count{margin-top:16px;font-size:14px;color:#b9c6c0}
+.perks{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:0 0 28px}
+.perks div{background:#fff;border:1px solid var(--line);border-left:4px solid var(--sun);border-radius:12px;padding:14px 16px}
+.perks b{display:block;font-family:var(--display);font-size:17px}.perks span{font-size:14px;color:var(--ink2)}
+/* grid + price-tag cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}
+.ad{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;text-align:left;padding:0;font:inherit;color:inherit;transition:transform .2s,box-shadow .2s}
+.ad:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(18,32,27,.12)}
+.ad .m{position:relative;aspect-ratio:4/3;background:#cfd6d1}
+.ad .m img,.ad .m video{width:100%;height:100%;object-fit:cover;display:block}
+.tag{position:absolute;left:0;bottom:14px;background:var(--sun);color:var(--ink);font-family:var(--display);font-weight:800;padding:6px 16px 6px 12px;clip-path:polygon(0 0,100% 0,calc(100% - 12px) 50%,100% 100%,0 100%)}
+.left{position:absolute;right:10px;top:10px;background:rgba(18,32,27,.82);color:#fff;font-size:12px;padding:3px 10px;border-radius:99px}
+.ad .b{padding:14px 16px 16px}
+.ad h3{font-size:19px;margin-bottom:4px}
+.ad .loc{font-size:14px;color:var(--ink2)}
+.mine{margin-top:10px;display:flex;gap:8px}
+.empty{grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--ink2);border:2px dashed var(--line);border-radius:14px}
+/* forms */
+.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:32px;margin:0 auto}
+.narrow{max-width:440px}.mid{max-width:620px}.wide{max-width:820px}
+.box h2{font-size:30px;margin-bottom:6px}
+.sub{color:var(--ink2);margin:0 0 20px}
+label{display:block;font-size:13px;font-weight:700;margin:14px 0 4px}
+input,textarea,select{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;background:#fff;color:inherit}
+input:focus,textarea:focus,select:focus{outline:0;border-color:var(--ink)}
+button{font:inherit;font-weight:700;background:var(--sun);color:var(--ink);border:0;padding:13px 20px;border-radius:10px;cursor:pointer;width:100%;margin-top:16px;transition:background .15s}
+button:hover{background:var(--sun-d)}
+button:disabled{opacity:.55;cursor:wait}
+button.ghost{background:transparent;border:1.5px solid var(--ink);color:var(--ink)}
+button.dark{background:var(--ink);color:#fff}
+button.sm{width:auto;margin:0;padding:6px 14px;font-size:13px}
+button.danger{background:var(--red);color:#fff}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.tier input{position:absolute;opacity:0;width:0}
+.tier span{display:block;border:1.5px solid var(--line);border-radius:12px;padding:12px;text-align:center;cursor:pointer;font-weight:500;font-size:14px}
+.tier b{display:block;font-family:var(--display);font-size:18px}
+.tier input:checked+span{border-color:var(--ink);background:var(--sun)}
+.tier input:focus-visible+span{outline:3px solid var(--ink);outline-offset:2px}
+.drop{border:2px dashed var(--line);border-radius:12px;padding:14px;margin-top:6px}
+.drop input{border:0;padding:0}
+.hint{font-size:12px;color:var(--ink2);margin:6px 0 0}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 20px;scrollbar-width:none}
+.chip{width:auto;flex:none;margin:0;padding:9px 12px 9px 16px;border-radius:99px;background:#fff;border:1.5px solid var(--line);display:flex;align-items:center;gap:8px;font-weight:500;font-size:14px;white-space:nowrap;transition:border-color .15s}
+.chip small{font-size:12px;min-width:22px;text-align:center;padding:1px 7px;border-radius:99px;background:var(--paper);color:var(--ink2)}
+.chip:hover{background:#fff;border-color:var(--ink)}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}.chip.on:hover{background:var(--ink)}
+.chip.on small{background:var(--sun);color:var(--ink);font-weight:700}
+details{border-bottom:1px solid var(--line);padding:14px 0}summary{cursor:pointer;font-weight:700}details p{margin:8px 0 0;color:var(--ink2)}
+.box h3{margin:32px 0 10px;font-size:22px}
+.feat{position:absolute;left:10px;top:10px;background:var(--red);color:#fff;font-size:12px;font-weight:700;padding:3px 10px;border-radius:99px}
+.chk{display:flex;gap:10px;align-items:center;font-weight:500;margin-top:14px;cursor:pointer}.chk input{width:auto}
+/* about */
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:24px 0}
+.cols div{background:var(--paper);border-radius:12px;padding:18px}
+.cols b{font-family:var(--display);font-size:18px;display:block;margin-bottom:4px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{background:var(--ink);color:#fff}
+.tw{overflow-x:auto;border-radius:10px;border:1px solid var(--line)}
+/* profile */
+.pp{width:96px;height:96px;border-radius:50%;object-fit:cover;background:var(--line);display:block;margin:0 auto 10px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}
+/* dialogs */
+dialog{border:0;border-radius:18px;padding:0;width:min(640px,94vw);max-height:92vh;box-shadow:0 30px 80px rgba(0,0,0,.4)}
+dialog::backdrop{background:rgba(18,32,27,.7)}
+.dg{padding:24px}
+.gal{display:flex;gap:8px;overflow-x:auto;margin-bottom:14px}
+.gal img,.gal video{height:220px;border-radius:10px;flex:none;max-width:100%;background:#000}
+.price{font-family:var(--display);font-size:26px;font-weight:800;color:var(--red)}
+.acts{display:flex;gap:10px;flex-wrap:wrap}
+.acts a{flex:1;min-width:130px;text-align:center;text-decoration:none;padding:12px;border-radius:10px;font-weight:700;background:var(--ink);color:#fff}
+.acts a.wa{background:#1fa855}
+#toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:12px 20px;border-radius:99px;opacity:0;pointer-events:none;transition:.25s;z-index:200;max-width:90vw;font-size:14px}
+#toast.on{opacity:1;transform:translateX(-50%)}
+#toast.err{background:var(--red)}
+.foot{background:var(--ink);color:#c5d0ea;font-size:14px;padding:40px 5% 24px}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1.3fr;gap:28px;max-width:1200px;margin:0 auto}
+.fg b{display:block;color:#fff;font-family:var(--display);margin-bottom:8px}.fg a{display:block;color:#c5d0ea;text-decoration:none;padding:3px 0}.fg a:hover{color:var(--sun)}.fg p{margin:0}
+.cp{text-align:center;margin:28px 0 0;font-size:13px;color:#8fa0c8}
+.legal h3{margin:22px 0 6px;font-size:19px}.legal p,.legal li{color:var(--ink2)}
+@media(max-width:760px){.fg{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.tiers{grid-template-columns:1fr}.box{padding:22px}.who{display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="#home"><svg width="28" height="28" viewBox="0 0 24 24" fill="#ff7a1a" aria-hidden="true"><path d="M18 11v2h4v-2h-4zm-2 6.61c.96.71 2.21 1.65 3.2 2.39.4-.53.8-1.07 1.2-1.6-.99-.74-2.24-1.68-3.2-2.4-.4.54-.8 1.08-1.2 1.61zM20.4 5.6c-.4-.53-.8-1.07-1.2-1.6-.99.74-2.24 1.68-3.2 2.4.4.53.8 1.07 1.2 1.6.96-.72 2.21-1.65 3.2-2.4zM4 9c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h1v4h2v-4h1l5 3V6L8 9H4zm11.5 3c0-1.33-.58-2.53-1.5-3.35v6.69c.92-.81 1.5-2.01 1.5-3.34z"/></svg>Promo<b>-Hub</b></a>
+  <nav class="nav" aria-label="Main">
+    <a href="#home">Home</a>
+    <a href="#explore">Explore ads</a>
+    <a href="#categories">Categories</a>
+    <a href="#deals">Deals</a>
+    <a href="#directory">Businesses</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#profile" id="n-profile" class="hide">My profile</a>
+    <a href="#admin" id="n-admin" class="hide">Admin</a>
+    <a href="#login" id="n-login">Log in</a>
+    <a href="#signup" id="n-signup">Sign up</a>
+    <a href="#post" class="cta">Post an ad</a>
+    <a href="#" id="n-logout" class="hide">Log out</a>
+  </nav>
+  <span class="who" id="who">Guest</span>
+</header>
+
+<main>
+<section id="home">
+  <div class="hero">
+    <video autoplay muted loop playsinline onerror="this.remove()"><source src="Video Project 1.mp4" type="video/mp4"></video>
+    <p class="tg">Advertise. Connect. Grow.</p>
+    <h1>Where Your Brands Come to Life.</h1>
+    <p>Discover products, connect with businesses and promote your brand to thousands of potential customers.</p>
+    <div class="find"><input id="q" type="search" placeholder="What are you looking for?" aria-label="Search ads"><select id="hc" aria-label="Category"></select><input id="hl" list="towns" placeholder="Location" aria-label="Location"><button class="dark" id="qgo">Explore ads</button></div>
+    <a class="btn" href="#post">Start advertising</a>
+    <datalist id="towns"><option>Kampala<option>Wakiso<option>Entebbe<option>Mukono<option>Jinja<option>Mbale<option>Gulu<option>Lira<option>Mbarara<option>Masaka<option>Fort Portal<option>Arua<option>Kabale<option>Soroti<option>Hoima<option>Tororo<option>Iganga<option>Mityana<option>Kasese<option>Busia</datalist>
+    <div class="count" id="count"></div>
+  </div>
+  <div class="perks">
+    <div><b>Post ads in minutes</b><span>Add photos or video and go live right away.</span></div>
+    <div><b>Reach more customers</b><span>Buyers search by place and category.</span></div>
+    <div><b>Safe and trusted</b><span>Every ad can be reported and reviewed.</span></div>
+    <div><b>Local focus</b><span>Built for sellers and buyers across Uganda.</span></div>
+  </div>
+  <h2 class="sech" id="catHead">Browse by category</h2>
+  <div class="chips" id="chips"></div>
+  <div id="exploreTop"></div>
+  <div id="featSec" class="sec hide"><h2 class="sech">Featured ads</h2><div id="featured" class="grid"></div></div>
+  <div id="trendSec" class="sec hide"><h2 class="sech">Trending now</h2><div id="trending" class="grid"></div></div>
+  <div id="recSec" class="sec hide"><h2 class="sech">Recently viewed</h2><div id="recent" class="grid"></div></div>
+  <div class="tools">
+    <select id="sort" aria-label="Sort"><option value="new">Newest first</option><option value="low">Lowest price</option><option value="high">Highest price</option></select>
+    <select id="dp" aria-label="Date posted"><option value="">Any date</option><option value="1">Last 24 hours</option><option value="7">Last 7 days</option><option value="30">Last 30 days</option></select>
+    <input id="pmin" type="number" min="0" placeholder="Min price (UGX)"><input id="pmax" type="number" min="0" placeholder="Max price (UGX)">
+  </div>
+  <h2 class="sech" id="allTitle">Latest ads</h2>
+  <div id="ads" class="grid sec" aria-live="polite"></div>
+  <h2 class="sech">How PROMO-HUB works</h2>
+  <div class="how">
+    <div><b>1. Create an account</b>Sign up free with a username and password.</div>
+    <div><b>2. Post or discover ads</b>Add photos, a price and your location, or search what others have posted.</div>
+    <div><b>3. Connect and grow</b>Buyers call or WhatsApp you. Your profile shows views and contacts.</div>
+  </div>
+  <div class="grow"><div><h2>Grow your business with PROMO-HUB</h2><p>Put your products and services in front of buyers who are searching right now.</p></div><a class="btn" href="#post">Post your first ad</a></div>
+</section>
+
+<section id="contact"><div class="box mid">
+  <h2>Contact us</h2><p class="sub">Questions, feedback or partnership ideas. Email <a href="mailto:promohub256@gmail.com"><b>promohub256@gmail.com</b></a> or use the form.</p>
+  <form id="contactForm">
+    <label for="cn">Your name</label><input id="cn" required>
+    <label for="ce">Your email</label><input id="ce" type="email" required>
+    <label for="cm">Message</label><textarea id="cm" rows="5" required></textarea>
+    <button class="dark">Send message</button>
+  </form>
+</div></section>
+
+<section id="help"><div class="box mid legal"><h2>Help centre</h2>
+  <h3>How do I post an ad?</h3><p>Create an account, choose Post an ad, pick how long it should run, then add your details and photos.</p>
+  <h3>How do I edit or delete my ad?</h3><p>Open My profile and use Edit or Delete next to the ad. Editing is free.</p>
+  <h3>How do buyers contact me?</h3><p>Buyers see a Call button and a WhatsApp button that use the phone number you enter.</p>
+  <h3>How do I report a bad ad?</h3><p>Open the ad and tap Report ad.</p>
+  <h3>Still stuck?</h3><p><a href="#contact">Contact us</a>.</p></div></section>
+
+<section id="terms"><div class="box mid legal"><h2>Terms and conditions</h2>
+  <h3>Using PROMO-HUB</h3><p>You must give accurate information and only advertise products or services you are allowed to sell.</p>
+  <h3>Prohibited ads</h3><p>Illegal goods, scams, misleading offers and abusive content are not allowed and will be removed.</p>
+  <h3>Your ads</h3><p>You are responsible for your ads and for dealings with buyers. PROMO-HUB is not a party to any sale.</p>
+  <h3>Fees</h3><p>Promotion fees are shown before you publish. Ads are removed when their period ends.</p>
+  <h3>Changes</h3><p>We may update these terms. Continued use means you accept the changes.</p></div></section>
+
+<section id="privacy"><div class="box mid legal"><h2>Privacy policy</h2>
+  <h3>What we collect</h3><p>Your name, username and a hashed password, plus the details you put in ads (including phone number and photos) and simple counts of ad views and contacts.</p>
+  <h3>How we use it</h3><p>To run your account, show your ads to buyers and show you how your ads perform.</p>
+  <h3>Who can see it</h3><p>Ad details, including the phone number, are public. Your password is never shown.</p>
+  <h3>Storage and deletion</h3><p>Data is stored with Google Firebase. To delete your account or data, <a href="#contact">contact us</a>.</p></div></section>
+
+<section id="about">
+  <div class="box wide">
+    <h2>Advertising that stays close to home</h2>
+    <p class="sub">Promo Hub helps local businesses and independent sellers get seen by buyers in their own area, without an agency or a big budget.</p>
+    <h3>How it works</h3>
+    <div class="cols">
+      <div><b>1. Create a free account</b>Choose a username and password. It takes under a minute.</div>
+      <div><b>2. Post your ad</b>Add photos or a short video, your price, your location and a phone number.</div>
+      <div><b>3. Get contacted</b>Buyers call you or message you on WhatsApp. Your profile shows views and contacts for every ad.</div>
+    </div>
+    <h3>Simple pricing</h3>
+    <div class="tw"><table><thead><tr><th>Plan</th><th>Runs for</th><th>Price</th></tr></thead><tbody>
+      <tr><td><b>Flash</b></td><td>24 hours</td><td>5,000 UGX</td></tr>
+      <tr><td><b>Standard</b></td><td>7 days</td><td>20,000 UGX</td></tr>
+      <tr><td><b>Pro</b></td><td>30 days</td><td>50,000 UGX</td></tr>
+      <tr><td><b>Featured add-on</b></td><td>Top of the page for the whole run</td><td>+10,000 UGX</td></tr>
+    </tbody></table></div>
+    <h3>Why sellers choose Promo Hub</h3>
+    <div class="cols">
+      <div><b>Local reach</b>Buyers search by place and category, so your ad meets people who can actually visit.</div>
+      <div><b>Photos and video</b>Show the real product, up to four images or a short clip per ad.</div>
+      <div><b>Numbers you can see</b>Track views, calls and WhatsApp taps to learn what works.</div>
+      <div><b>Pay your way</b>MTN Mobile Money, Airtel Money or card.</div>
+    </div>
+    <h3>Questions</h3>
+    <details><summary>What can I advertise?</summary><p>Products, services, property, vehicles, events and jobs. Misleading or illegal ads are removed.</p></details>
+    <details><summary>Can I change my ad after posting?</summary><p>Yes. Open My profile, choose Edit, and update the details or photos. Editing is free.</p></details>
+    <details><summary>What happens when my ad ends?</summary><p>It leaves the page automatically. Post a new ad whenever you want to run again.</p></details>
+    <details><summary>How do I report a bad ad?</summary><p>Open the ad and tap Report ad. We review every report.</p></details>
+    <p style="margin-top:28px">PROMO-HUB started as a student-driven initiative at Makerere University. Have a question? <a href="#contact"><b>Contact us</b></a>.</p>
+  </div>
+</section>
+
+<section id="deals"><h2 class="sech">Deals</h2><p class="sub">Ads with a reduced price. The time left is each ad’s real end time.</p><div id="dealsGrid" class="grid"></div></section>
+<section id="directory"><h2 class="sech">Business directory</h2><p class="sub">Local businesses on PROMO-HUB. Create yours from My profile.</p><div id="bizGrid" class="grid"></div></section>
+
+<section id="admin"><h2 class="sech">Admin</h2>
+  <div class="kpis" id="akp"></div>
+  <h3>Reports</h3><div id="arep"></div><h3>Messages</h3><div id="amsg"></div><h3>Businesses</h3><div id="abiz"></div><h3>All ads</h3><div id="aads"></div>
+</section>
+
+<section id="login"><div class="box narrow">
+  <h2>Log in</h2><p class="sub">Welcome back.</p>
+  <form id="fLogin">
+    <label for="lu">Username</label><input id="lu" autocomplete="username" required>
+    <label for="lp">Password</label><input id="lp" type="password" autocomplete="current-password" required>
+    <button>Log in</button>
+  </form>
+  <p class="hint" style="margin-top:14px">New here? <a href="#signup">Create an account</a></p>
+</div></section>
+
+<section id="signup"><div class="box narrow">
+  <h2>Create account</h2><p class="sub">Free, and takes under a minute.</p>
+  <form id="fSignup">
+    <label for="sn">Full name</label><input id="sn" autocomplete="name" required>
+    <label for="su">Username</label><input id="su" autocomplete="username" pattern="[a-zA-Z0-9_.]{3,24}" title="3–24 letters, numbers, dots or underscores" required>
+    <label for="sp">Password</label><input id="sp" type="password" minlength="6" autocomplete="new-password" required>
+    <p class="hint">At least 6 characters.</p>
+    <button>Create account</button>
+  </form>
+  <p class="hint" style="margin-top:14px">Already registered? <a href="#login">Log in</a></p>
+</div></section>
+
+<section id="profile"><div class="box mid">
+  <img id="pimg" class="pp" alt="Profile photo" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+  <h2 id="pname" style="text-align:center">Your profile</h2>
+  <p id="puser" class="sub" style="text-align:center"></p>
+  <form id="fProfile">
+    <label for="en">Name</label><input id="en">
+    <label for="ed">Date of birth</label><input id="ed" type="date">
+    <label for="ep">Profile photo</label><input id="ep" type="file" accept="image/*">
+    <button class="dark">Save profile</button>
+  </form>
+  <h3>My ads</h3><div id="mine"></div>
+  <h3>Ad performance</h3><div id="stats"></div>
+  <h3>Enquiries received</h3><div id="enqs"></div>
+  <h3>Saved ads</h3><div id="saved"></div>
+  <h3>My business profile</h3>
+  <form id="fBiz">
+    <label for="bn">Business name</label><input id="bn" required>
+    <label for="bc">Category</label><select id="bc"></select>
+    <label for="bd">Description</label><textarea id="bd" rows="3" required></textarea>
+    <label for="bl">Location</label><input id="bl" list="towns" required>
+    <label for="bp">Phone</label><input id="bp" type="tel" required>
+    <label for="bw">WhatsApp (optional)</label><input id="bw" type="tel">
+    <label for="be">Email (optional)</label><input id="be" type="email">
+    <label for="bs">Website (optional)</label><input id="bs" placeholder="https://">
+    <label for="bh">Opening hours (optional)</label><input id="bh" placeholder="Mon–Sat 8am–6pm">
+    <label for="bg">Logo (optional)</label><input id="bg" type="file" accept="image/*">
+    <button class="dark">Save business profile</button>
+    <p class="hint">The Verified badge is only added by PROMO-HUB after checking your business.</p>
+  </form>
+</div></section>
+
+<section id="post"><div class="box mid">
+  <h2 id="ptitle">Post an ad</h2><p class="sub" id="psub">Pick how long it should run, then add the details.</p>
+  <form id="fAd">
+    <input type="hidden" id="aid">
+    <div id="tierBox">
+      <label>How long should it run?</label>
+      <div class="tiers">
+        <label class="tier"><input type="radio" name="tier" value="1" data-cost="5000"><span><b>24 hours</b>5,000 UGX</span></label>
+        <label class="tier"><input type="radio" name="tier" value="7" data-cost="20000" checked><span><b>7 days</b>20,000 UGX</span></label>
+        <label class="tier"><input type="radio" name="tier" value="30" data-cost="50000"><span><b>30 days</b>50,000 UGX</span></label>
+      </div>
+      <label class="chk"><input type="checkbox" id="feat"> Feature my ad at the top of the page (+10,000 UGX)</label>
+    </div>
+    <label for="at">Product name</label><input id="at" maxlength="80" required>
+    <label for="ac">Category</label><select id="ac" required></select>
+    <label for="ap">Price</label><input id="ap" placeholder="e.g. 50,000 UGX" required>
+    <label for="ao">Original price (optional)</label><input id="ao" placeholder="Fill in to list it as a deal">
+    <label for="ad">Details</label><textarea id="ad" rows="4" required></textarea>
+    <label for="al">Location</label><input id="al" list="towns" placeholder="e.g. Wandegeya, Kampala" required>
+    <label for="ah">Phone number</label><input id="ah" type="tel" placeholder="e.g. 0772 000 000" required>
+    <label for="am">Photos or video</label>
+    <div class="drop"><input id="am" type="file" accept="image/*,video/*" multiple>
+      <p class="hint">Up to 4 images (resized automatically) or 1 video under 5 MB.</p></div>
+    <button id="go">Continue to payment</button>
+  </form>
+</div></section>
+</main>
+
+<dialog id="detail"><div class="dg">
+  <div id="dgal" class="gal"></div>
+  <h2 id="dt"></h2><div class="price" id="dp"></div>
+  <p id="dd" style="white-space:pre-wrap"></p>
+  <p><b>Location:</b> <span id="dl"></span><br><b>Phone:</b> <span id="dph"></span></p>
+  <p id="dbiz"></p>
+  <details style="border:0;padding:0 0 10px"><summary>Send an enquiry</summary>
+    <form id="fEnq"><input id="q1" placeholder="Your name" required><input id="q2" placeholder="Your phone or email" required><textarea id="q3" rows="3" placeholder="Your message" required></textarea><input id="honey" class="hide" tabindex="-1" autocomplete="off"><button class="dark">Send enquiry</button></form></details>
+  <div class="acts"><a id="dcall">Call seller</a><a id="dwa" class="wa" target="_blank" rel="noopener">WhatsApp</a></div>
+  <div style="display:flex;gap:10px;margin-top:12px"><button class="sm ghost" id="dsave">Save ad</button><button class="sm ghost" id="dshare">Share ad</button><button class="sm ghost" id="dreport">Report ad</button></div>
+  <button class="ghost" onclick="this.closest('dialog').close()">Close</button>
+</div></dialog>
+
+<dialog id="pay"><div class="dg" style="text-align:center">
+  <h2>Checkout</h2>
+  <p>Total: <b class="price" id="amt">20,000 UGX</b></p>
+  <p class="hint">You will pay securely on Pesapal with MTN Mobile Money, Airtel Money or card. Your ad goes live as soon as the payment is confirmed.</p>
+  <button id="paygo" class="dark">Pay with Pesapal</button>
+  <button class="ghost" onclick="this.closest('dialog').close()">Cancel</button>
+</div></dialog>
+
+<dialog id="biz"><div class="dg"><div id="bizBody"></div><button class="ghost" onclick="this.closest('dialog').close()">Close</button></div></dialog>
+<div id="toast" role="status"></div>
+<footer class="foot"><div class="fg">
+  <div><b>PROMO-HUB</b><p>Bring Yo Brand to Life. A digital advertising and business-discovery platform for Uganda.</p></div>
+  <div><b>Explore</b><a href="#explore">Browse ads</a><a href="#categories">Categories</a><a href="#post">Advertise with us</a><a href="#about">About</a></div>
+  <div><b>Support</b><a href="#help">Help centre</a><a href="#contact">Contact</a><a href="#terms">Terms and conditions</a><a href="#privacy">Privacy policy</a></div>
+  <div><b>Contact</b><a href="mailto:promohub256@gmail.com">promohub256@gmail.com</a></div>
+</div><p class="cp">© 2026 PROMO-HUB. All rights reserved.</p></footer>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { getFunctions, httpsCallable } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-functions.js";
+import { getDatabase, increment, ref, push, onValue, set, get, child, update, remove } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+const app = initializeApp({
+  apiKey:"AIzaSyA8x2xjPJ6JV93RLEXyIF0OXVMLVKfYfQw",authDomain:"promo-hub-fb31f.firebaseapp.com",projectId:"promo-hub-fb31f",
+  storageBucket:"promo-hub-fb31f.firebasestorage.app",messagingSenderId:"86914018082",appId:"1:86914018082:web:d197f7d7174e0bed6e937b",
+  databaseURL:"https://promo-hub-fb31f-default-rtdb.firebaseio.com"});
+const db = getDatabase(app), auth = getAuth(app), fns = getFunctions(app);
+const email = u => u + "@users.promohub.app";
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const me = () => auth.currentUser ? auth.currentUser.email.split("@")[0] : "";
+let ads = [], term = "", place = "", cat = "All", curK = "", deep = false, favs = {}, enq = [], bizList = {}, unsubs = [], isAdmin = false, reports = {}, msgs = {};
+const num = a => parseInt(String(a.price).replace(/\D/g,"")) || 0, oldn = a => parseInt(String(a.oldPrice||"").replace(/\D/g,"")) || 0, isDeal = a => num(a)>0 && oldn(a)>num(a);
+const CATS = ["Electronics","Fashion and Clothing","Real Estate","Vehicles","Food and Restaurants","Jobs and Careers","Professional Services","Education","Health and Beauty","Home and Furniture","Agriculture","Events and Entertainment"];
+$("ac").innerHTML = CATS.map(c=>`<option>${c}</option>`).join("");
+
+/* ---------- helpers ---------- */
+let tt;
+function toast(msg, err){ const t=$("toast"); t.textContent=msg; t.className="on"+(err?" err":""); clearTimeout(tt); tt=setTimeout(()=>t.className="",3200); }
+async function sha(s){ const b=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(s)); return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,"0")).join(""); }
+const media = src => src.startsWith("data:video") ? `<video src="${src}" controls playsinline></video>` : `<img src="${src}" alt="">`;
+function compress(file, max=1000){
+  return new Promise((ok,no)=>{
+    if(file.type.startsWith("video")){ if(file.size>5*1024*1024) return no(new Error(`“${file.name}” is over 5 MB`));
+      const r=new FileReader(); r.onload=e=>ok(e.target.result); r.onerror=no; return r.readAsDataURL(file); }
+    const img=new Image(), u=URL.createObjectURL(file);
+    img.onload=()=>{ const k=Math.min(1,max/Math.max(img.width,img.height)), c=document.createElement("canvas");
+      c.width=Math.round(img.width*k); c.height=Math.round(img.height*k); c.getContext("2d").drawImage(img,0,0,c.width,c.height);
+      URL.revokeObjectURL(u); ok(c.toDataURL("image/jpeg",.75)); };
+    img.onerror=()=>no(new Error("Could not read that image")); img.src=u; });
+}
+async function readMedia(files){
+  const list=[...files]; if(!list.length) return [];
+  if(list.some(f=>f.type.startsWith("video")) && list.length>1) throw new Error("Choose either one video or up to 4 images");
+  if(list.length>4) throw new Error("Maximum 4 images per ad");
+  return Promise.all(list.map(f=>compress(f)));
+}
+const daysLeft = ad => { const ms=ad.expiresAt-Date.now(), d=Math.floor(ms/864e5), h=Math.floor(ms%864e5/36e5); return d>=1 ? d+" day"+(d>1?"s":"")+" left" : h+"h left"; };
+
+/* ---------- routing ---------- */
+const views = ["home","about","login","signup","profile","post","contact","help","terms","privacy","deals","directory","admin"];
+function route(){
+  const raw = location.hash.slice(1) || "home"; let id = ({explore:"home",categories:"home"})[raw] || raw; if(!views.includes(id)) id="home";
+  if((id==="post"||id==="profile") && !me()){ toast("Please log in first", true); id="login"; history.replaceState(null,"","#login"); }
+  if(id==="admin" && !isAdmin) id="home";
+  views.forEach(v=>$(v).classList.toggle("on",v===id));
+  document.querySelectorAll(".nav a").forEach(a=>a.toggleAttribute("aria-current", a.getAttribute("href")==="#"+raw && id!=="post"));
+  if(id==="profile") loadProfile();
+  if(id==="post" && !$("aid").value) resetForm();
+  const t = ({explore:"exploreTop",categories:"catHead"})[raw]; if(t) $(t).scrollIntoView(); else window.scrollTo(0,0);
+}
+addEventListener("hashchange", route);
+
+/* ---------- auth ---------- */
+const taken = () => toast("That username is taken. Try another.", true);
+$("fSignup").onsubmit = async e => {
+  e.preventDefault();
+  const u=$("su").value.toLowerCase().trim(), n=$("sn").value.trim(), p=$("sp").value;
+  try{ if((await get(child(ref(db),`users/${u}`))).exists()) return taken(); }catch{ return taken(); }
+  try{
+    const c = await createUserWithEmailAndPassword(auth, email(u), p);
+    try{ await set(ref(db,"users/"+u),{ fullName:n, uid:c.user.uid, profilePic:"", dob:"" }); }
+    catch{ await c.user.delete(); return taken(); }
+    localStorage.setItem("fullName",n); paintAuth(); toast("Welcome to PROMO-HUB, "+n.split(" ")[0]); location.hash="#home";
+  }catch(err){ err.code==="auth/email-already-in-use" ? taken() : toast(err.message, true); }
+};
+$("fLogin").onsubmit = async e => {
+  e.preventDefault();
+  const u=$("lu").value.toLowerCase().trim(), p=$("lp").value;
+  try{
+    try{ await signInWithEmailAndPassword(auth, email(u), p); }
+    catch(err){
+      if(!/auth\/(invalid|user-not-found|wrong)/.test(err.code||"")) throw err;
+      let d=null; try{ d=(await get(child(ref(db),`users/${u}`))).val(); }catch{}
+      const ok = d && !d.uid && (d.passHash===await sha(u+":"+p) || (d.password && d.password===p));
+      if(!ok) throw err;
+      if(p.length<6) throw new Error("Your old password is too short for secure login. Please contact us.");
+      const c = await createUserWithEmailAndPassword(auth, email(u), p);
+      await update(ref(db,"users/"+u),{ uid:c.user.uid, passHash:null, password:null });
+      toast("Your account now uses secure login");
+    }
+    location.hash="#home";
+  }catch(err){ toast(/auth\/(invalid|user-not-found|wrong)/.test(err.code||"") ? "Wrong username or password" : err.message, true); }
+};
+$("n-logout").onclick = async e => { e.preventDefault(); await signOut(auth); toast("Logged out"); location.hash="#home"; };
+function paintAuth(){
+  const on = !!me();
+  $("who").textContent = on ? localStorage.getItem("fullName") : "Guest";
+  $("n-login").classList.toggle("hide",on); $("n-signup").classList.toggle("hide",on);
+  $("n-admin").classList.toggle("hide",!isAdmin); $("n-profile").classList.toggle("hide",!on); $("n-logout").classList.toggle("hide",!on);
+  subscribeUser(); render();
+}
+
+/* ---------- ads ---------- */
+onValue(ref(db,"ads"), s => { ads = s.val() ? Object.entries(s.val()) : []; render();
+  if(!deep){ deep=true; const k=new URLSearchParams(location.search).get("ad"); if(k) openDetail(k); } });
+$("q").oninput = () => { term=$("q").value.toLowerCase().trim(); render(); };
+$("hc").innerHTML = '<option value="">All categories</option>' + CATS.map(c=>`<option>${c}</option>`).join("");
+$("hc").onchange = () => { cat = $("hc").value || "All"; render(); };
+$("hl").oninput = () => { place = $("hl").value.trim(); render(); };
+$("qgo").onclick = () => $("exploreTop").scrollIntoView({behavior:"smooth"});
+
+function subscribeUser(){
+  unsubs.forEach(f=>f()); unsubs=[]; favs={}; enq=[]; const u=me(); if(!u) return;
+  unsubs.push(onValue(ref(db,"favs/"+u), x=>{ favs=x.val()||{}; render(); }));
+  unsubs.push(onValue(ref(db,"enquiries/"+u), x=>{ enq=x.val()?Object.values(x.val()).sort((p,q)=>q.at-p.at):[]; render(); }));
+}
+function render(){
+  const now = Date.now(), isF = a=>a.featuredUntil>now;
+  const alive = ads.filter(([,a])=>a.expiresAt>now);
+  const live = alive.filter(([,a])=>a.status!=="paused").reverse().sort((x,y)=>isF(y[1])-isF(x[1]));
+  const cnt = c => c==="All" ? live.length : live.filter(([,a])=>a.cat===c).length;
+  $("chips").innerHTML = ["All",...CATS].map(c=>`<button class="chip${c===cat?" on":""}" data-c="${esc(c)}"><span>${esc(c)}</span><small>${cnt(c)}</small></button>`).join("");
+  const loc = place.toLowerCase(), mn = parseInt($("pmin").value)||0, mx = parseInt($("pmax").value)||0, dp = parseInt($("dp").value)||0;
+  const filtering = cat!=="All" || term || loc || mn || mx || dp;
+  const shown = live.filter(([,a])=>(cat==="All"||a.cat===cat) && (!term || (a.title+" "+a.loc+" "+a.desc+" "+(a.cat||"")).toLowerCase().includes(term)) && (!loc || String(a.loc).toLowerCase().includes(loc)) && (!mn || num(a)>=mn) && (!mx || num(a)<=mx) && (!dp || (a.createdAt && now-a.createdAt<=dp*864e5)));
+  const so = $("sort").value; if(so==="low") shown.sort((x,y)=>num(x[1])-num(y[1])); if(so==="high") shown.sort((x,y)=>num(y[1])-num(x[1]));
+  const card = ([k,a]) => {
+    const first = (a.images&&a.images[0]) || a.img || "";
+    const m = !first ? "" : first.startsWith("data:video") ? `<video src="${first}" muted autoplay loop playsinline></video>` : `<img src="${first}" alt="" loading="lazy">`;
+    return `<button class="ad" data-k="${esc(k)}"><div class="m">${m}<span class="tag">${esc(a.price)}</span><span class="left">${daysLeft(a)}</span>${isF(a)?'<span class="feat">Featured</span>':""}${isDeal(a)?`<span class="off">-${Math.round(100-num(a)/oldn(a)*100)}%</span>`:""}</div>
+      <div class="b"><h3>${esc(a.title)}</h3><div class="loc">${a.cat?esc(a.cat)+" · ":""}${esc(a.loc)}${a.createdAt?" · "+new Date(a.createdAt).toLocaleDateString():""}</div></div></button>`;
+  };
+  $("count").textContent = live.length ? `${live.length} live ad${live.length>1?"s":""} right now` : "";
+  const feat = filtering ? [] : live.filter(([,a])=>isF(a)).slice(0,4);
+  const trend = filtering ? [] : live.filter(([,a])=>(a.views||0)>0 && !isF(a)).sort((x,y)=>(y[1].views||0)-(x[1].views||0)).slice(0,4);
+  let rv=[]; try{ rv=JSON.parse(localStorage.getItem("rv")||"[]"); }catch{}
+  const rec = filtering ? [] : rv.map(k=>live.find(x=>x[0]===k)).filter(Boolean).slice(0,4);
+  [["featSec","featured",feat],["trendSec","trending",trend],["recSec","recent",rec]].forEach(([sec,g,l])=>{ $(sec).classList.toggle("hide",!l.length); $(g).innerHTML=l.map(card).join(""); });
+  $("allTitle").textContent = filtering ? `${shown.length} result${shown.length===1?"":"s"}` : "Latest ads";
+  $("ads").innerHTML = shown.length ? shown.map(card).join("") : `<div class="empty"><b>${filtering?"No ads match your search":"No live ads yet"}</b><p>${filtering?"Try another word, category, place or price range.":"Be the first to <a href='#post'>post an ad</a>."}</p></div>`;
+  const dl = live.filter(([,a])=>isDeal(a));
+  $("dealsGrid").innerHTML = dl.length ? dl.map(card).join("") : `<div class="empty"><b>No deals right now</b><p>Sellers add a deal by filling in “Original price” when posting.</p></div>`;
+  const mine = ads.filter(([,a])=>a.owner===me() && (a.expiresAt>now || a.status==="pending"));
+  $("mine").innerHTML = mine.length ? mine.map(([k,a])=>`<div class="row"><span><b>${esc(a.title)}</b><br><small>${a.status==="pending"?"Awaiting payment":(a.status==="paused"?"Paused · ":"")+daysLeft(a)}</small></span>
+    <span style="display:flex;gap:6px">${a.status==="pending"?`<button class="sm dark" data-pay="${esc(k)}">Pay now</button>`:`<button class="sm ghost" data-pause="${esc(k)}" data-st="${a.status==="paused"?"active":"paused"}">${a.status==="paused"?"Resume":"Pause"}</button><button class="sm dark" data-edit="${esc(k)}">Edit</button>`}<button class="sm danger" data-del="${esc(k)}">Delete</button></span></div>`).join("")
+    : `<p class="sub">You have no live ads. <a href="#post">Post one</a>.</p>`;
+  const sum = f => mine.reduce((t,[,a])=>t+(a[f]||0),0), top = Math.max(1,...mine.map(([,a])=>a.views||0));
+  $("stats").innerHTML = mine.length ? `<div class="kpis"><div><b>${sum("views")}</b>Views</div><div><b>${sum("calls")}</b>Calls</div><div><b>${sum("wa")}</b>WhatsApp taps</div><div><b>${enq.length}</b>Enquiries</div></div>`
+    + mine.map(([,a])=>`<div class="sec2"><b>${esc(a.title)}</b> <small>${a.views||0} views · ${a.calls||0} calls · ${a.wa||0} WhatsApp</small><div class="bar2"><i style="width:${Math.round((a.views||0)/top*100)}%"></i></div></div>`).join("") : `<p class="sub">Numbers appear once you have a live ad.</p>`;
+  $("enqs").innerHTML = enq.length ? enq.map(q=>`<div class="sec2"><b>${esc(q.name)}</b> (${esc(q.contact)}) about <i>${esc(q.ad)}</i><br>${esc(q.msg)}<br><small>${new Date(q.at).toLocaleString()}</small></div>`).join("") : `<p class="sub">No enquiries yet.</p>`;
+  const sv = Object.keys(favs).map(k=>alive.find(x=>x[0]===k)).filter(Boolean);
+  $("saved").innerHTML = sv.length ? sv.map(([k,a])=>`<div class="row"><span><b>${esc(a.title)}</b><br><small>${esc(a.price)}</small></span><button class="sm dark" data-open="${esc(k)}">View</button></div>`).join("") : `<p class="sub">Tap Save ad on any ad to keep it here.</p>`;
+  renderBiz(live); renderAdmin();
+}
+function renderAdmin(){
+  if(!isAdmin) return;
+  const now=Date.now(), live=ads.filter(([,a])=>a.expiresAt>now), t=k=>esc(ads.find(x=>x[0]===k)?.[1].title||"(deleted ad)");
+  const row=(l,btns)=>`<div class="row"><span>${l}</span><span style="display:flex;gap:6px">${btns}</span></div>`;
+  $("akp").innerHTML=[["Live ads",live.length],["Businesses",Object.keys(bizList).length],["Reports",Object.keys(reports).length],["Messages",Object.keys(msgs).length]].map(([l,n])=>`<div><b>${n}</b>${l}</div>`).join("");
+  $("arep").innerHTML=Object.entries(reports).map(([i,r])=>row(`${t(r.ad)}<br><small>reported by ${esc(r.by)} · ${new Date(r.at).toLocaleDateString()}</small>`,`<button class="sm danger" data-adel="${esc(r.ad)}">Delete ad</button><button class="sm ghost" data-rdel="${esc(i)}">Dismiss</button>`)).join("")||'<p class="sub">No reports.</p>';
+  $("amsg").innerHTML=Object.entries(msgs).map(([i,m])=>row(`<b>${esc(m.name)}</b> (${esc(m.email)})<br>${esc(m.msg)}`,`<button class="sm ghost" data-mdel="${esc(i)}">Delete</button>`)).join("")||'<p class="sub">No messages.</p>';
+  $("abiz").innerHTML=Object.entries(bizList).map(([k,b])=>row(`<b>${esc(b.name)}</b> <small>${esc(b.loc)}</small>${b.verified?'<span class="verified">Verified</span>':""}`,`<button class="sm dark" data-ver="${esc(k)}" data-v="${b.verified?0:1}">${b.verified?"Remove badge":"Verify"}</button>`)).join("")||'<p class="sub">None yet.</p>';
+  $("aads").innerHTML=ads.map(([k,a])=>row(`<b>${esc(a.title)}</b> <small>${esc(a.owner||"")} · ${a.expiresAt>now?"live":"ended"}</small>`,`<button class="sm danger" data-adel="${esc(k)}">Delete</button>`)).join("");
+}
+$("admin").onclick = async e => { const d=e.target.dataset;
+  if(d.adel && confirm("Delete this ad?")) await remove(ref(db,"ads/"+d.adel));
+  if(d.rdel) await remove(ref(db,"reports/"+d.rdel));
+  if(d.mdel) await remove(ref(db,"messages/"+d.mdel));
+  if(d.ver) await update(ref(db,"businesses/"+d.ver),{verified:d.v==="1"}); };
+function renderBiz(live){
+  const now=Date.now(), l = live || ads.filter(([,a])=>a.expiresAt>now);
+  const es = Object.entries(bizList);
+  $("bizGrid").innerHTML = es.length ? es.map(([k,b])=>`<button class="ad" data-b="${esc(k)}"><div class="m bz">${b.logo?`<img src="${b.logo}" alt="">`:esc((b.name||"?")[0].toUpperCase())}</div>
+    <div class="b"><h3>${esc(b.name)}${b.verified?'<span class="verified">Verified</span>':""}</h3><div class="loc">${esc(b.cat||"")} · ${esc(b.loc)} · ${l.filter(([,a])=>a.owner===k).length} ads</div></div></button>`).join("")
+    : `<div class="empty"><b>No businesses yet</b><p>Create your business profile from <a href="#profile">My profile</a>.</p></div>`;
+}
+$("ads").onclick = e => { const b=e.target.closest(".ad"); if(b) openDetail(b.dataset.k); };
+$("mine").onclick = e => {
+  if(e.target.dataset.edit) startEdit(e.target.dataset.edit);
+  if(e.target.dataset.pay) payAd(e.target.dataset.pay);
+  if(e.target.dataset.pause) update(ref(db,"ads/"+e.target.dataset.pause),{status:e.target.dataset.st}).then(()=>toast(e.target.dataset.st==="paused"?"Ad paused":"Ad is live again"));
+  if(e.target.dataset.del && confirm("Delete this ad for good?")) remove(ref(db,"ads/"+e.target.dataset.del)).then(()=>toast("Ad deleted"));
+};
+
+function openDetail(k){
+  const a = ads.find(x=>x[0]===k)?.[1]; if(!a) return;
+  const items = a.images || (a.img?[a.img]:[]);
+  $("dgal").innerHTML = items.map(media).join(""); $("dgal").classList.toggle("hide",!items.length);
+  $("dt").textContent=a.title; $("dp").textContent=a.price; $("dd").textContent=a.desc; $("dl").textContent=a.loc; $("dph").textContent=a.phone;
+  const digits = String(a.phone).replace(/\D/g,""), intl = digits.startsWith("0") ? "256"+digits.slice(1) : digits;
+  $("dcall").href = "tel:+"+intl; $("dwa").href = "https://wa.me/"+intl+"?text="+encodeURIComponent(`Hi, I saw “${a.title}” on Promo Hub.`);
+  curK=k; $("dsave").textContent = favs[k] ? "Saved" : "Save ad";
+  $("dbiz").innerHTML = bizList[a.owner] ? `<a href="#" data-biz="${esc(a.owner)}"><b>View ${esc(bizList[a.owner].name)}</b></a>` : "";
+  try{ const rv=JSON.parse(localStorage.getItem("rv")||"[]").filter(x=>x!==k); rv.unshift(k); localStorage.setItem("rv",JSON.stringify(rv.slice(0,8))); }catch{}
+  $("detail").showModal();
+  if(!sessionStorage["v"+k]){ sessionStorage["v"+k]=1; track("views"); }
+}
+const track = f => { const a=ads.find(x=>x[0]===curK)?.[1]; if(a && a.owner!==me()) set(ref(db,`ads/${curK}/${f}`),increment(1)); };
+$("dcall").onclick = () => track("calls"); $("dwa").onclick = () => track("wa");
+$("dsave").onclick = async () => { if(!me()){ toast("Log in to save ads", true); return; } const r=ref(db,`favs/${me()}/${curK}`); if(favs[curK]){ await remove(r); $("dsave").textContent="Save ad"; } else { await set(r,true); $("dsave").textContent="Saved"; } };
+$("dbiz").onclick = e => { const b=e.target.closest("[data-biz]"); if(b){ e.preventDefault(); $("detail").close(); openBiz(b.dataset.biz); } };
+$("fEnq").onsubmit = async e => {
+  e.preventDefault(); if($("honey").value) return;
+  if(!me()) return toast("Log in to send an enquiry", true);
+  const a=ads.find(x=>x[0]===curK)?.[1]; if(!a?.owner) return toast("This seller can only be reached by phone", true);
+  if(Date.now()-(+localStorage.getItem("lastEnq")||0)<30000) return toast("Please wait a moment before sending another enquiry", true);
+  await push(ref(db,"enquiries/"+a.owner),{ ad:a.title, adKey:curK, name:$("q1").value.trim(), contact:$("q2").value.trim(), msg:$("q3").value.trim(), at:Date.now() });
+  localStorage.setItem("lastEnq",Date.now()); e.target.reset(); toast("Enquiry sent to the seller");
+};
+$("saved").onclick = e => { if(e.target.dataset.open) openDetail(e.target.dataset.open); };
+$("bizGrid").onclick = e => { const b=e.target.closest(".ad"); if(b) openBiz(b.dataset.b); };
+$("dealsGrid").onclick = e => { const b=e.target.closest(".ad"); if(b) openDetail(b.dataset.k); };
+["featured","trending","recent"].forEach(i=>$(i).onclick = e => { const b=e.target.closest(".ad"); if(b) openDetail(b.dataset.k); });
+["sort","dp","pmin","pmax"].forEach(i=>$(i).addEventListener("input",render));
+$("bc").innerHTML = CATS.map(c=>`<option>${c}</option>`).join("");
+onValue(ref(db,"businesses"), x=>{ bizList=x.val()||{}; renderBiz(); });
+const BF = {bn:"name",bc:"cat",bd:"desc",bl:"loc",bp:"phone",bw:"wa",be:"email",bs:"site",bh:"hours"};
+$("fBiz").onsubmit = async e => {
+  e.preventDefault();
+  try{
+    const o={}; Object.entries(BF).forEach(([i,f])=>o[f]=$(i).value.trim());
+    if(o.site && !/^https?:\/\//i.test(o.site)) o.site="https://"+o.site;
+    if($("bg").files[0]) o.logo = await compress($("bg").files[0],220);
+    o.owner = me(); await update(ref(db,"businesses/"+me()),o); toast("Business profile saved");
+  }catch(err){ toast(err.message, true); }
+};
+async function openBiz(k){
+  const b=bizList[k]; if(!b) return;
+  const now=Date.now(), list=ads.filter(([,a])=>a.owner===k && a.expiresAt>now && a.status!=="paused");
+  const rv=(await get(ref(db,"reviews/"+k))).val()||{}, rs=Object.values(rv), avg=rs.length?(rs.reduce((t,r)=>t+r.rating,0)/rs.length).toFixed(1):"";
+  const d=String(b.wa||b.phone).replace(/\D/g,""), intl=d.startsWith("0")?"256"+d.slice(1):d;
+  const site=/^https?:\/\//i.test(b.site||"")?b.site:"";
+  $("bizBody").innerHTML = `${b.logo?`<img src="${b.logo}" alt="" style="width:80px;height:80px;border-radius:14px;object-fit:cover">`:""}
+    <h2>${esc(b.name)}${b.verified?'<span class="verified">Verified</span>':""}</h2><p class="sub">${esc(b.cat||"")} · ${esc(b.loc)}</p><p>${esc(b.desc)}</p>
+    ${b.hours?`<p><b>Hours:</b> ${esc(b.hours)}</p>`:""}${b.email?`<p><b>Email:</b> ${esc(b.email)}</p>`:""}${site?`<p><a href="${esc(site)}" target="_blank" rel="noopener">${esc(site)}</a></p>`:""}
+    <div class="acts"><a href="tel:+${intl}">Call</a><a class="wa" target="_blank" rel="noopener" href="https://wa.me/${intl}">WhatsApp</a></div>
+    <h3>Ads (${list.length})</h3>${list.map(([i,a])=>`<div class="row"><span><b>${esc(a.title)}</b> <small>${esc(a.price)}</small></span><button class="sm dark" data-open="${esc(i)}">View</button></div>`).join("")||'<p class="sub">No live ads.</p>'}
+    <h3>Reviews ${avg?`(${avg} / 5 from ${rs.length})`:""}</h3>
+    ${rs.map(r=>`<div class="sec2"><b>${esc(r.name)}</b> · ${"★".repeat(r.rating)}<br>${esc(r.text)}</div>`).join("")||'<p class="sub">No reviews yet.</p>'}
+    ${me()&&me()!==k?`<form id="fRev" data-k="${esc(k)}"><label>Your rating</label><select id="rr"><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select><textarea id="rt" rows="3" placeholder="Share your experience" required></textarea><button class="dark">Post review</button></form>`:`<p class="hint">${me()?"You cannot review your own business.":"Log in to leave a review."}</p>`}`;
+  $("biz").showModal();
+}
+$("bizBody").onclick = e => { const k=e.target.dataset.open; if(k){ $("biz").close(); openDetail(k); } };
+$("bizBody").onsubmit = async e => {
+  e.preventDefault(); const k=e.target.dataset.k; if(!me()||me()===k) return;
+  await set(ref(db,`reviews/${k}/${me()}`),{ rating:+$("rr").value, text:$("rt").value.trim(), name:localStorage.getItem("fullName"), at:Date.now() });
+  toast("Review posted"); openBiz(k);
+};
+$("dshare").onclick = async () => { const url=location.origin+location.pathname+"?ad="+curK; try{ if(navigator.share) await navigator.share({title:$("dt").textContent,url}); else { await navigator.clipboard.writeText(url); toast("Link copied"); } }catch{} };
+$("dreport").onclick = () => { if(confirm("Report this ad as misleading or inappropriate?")) push(ref(db,"reports"),{ad:curK,at:Date.now(),by:me()||"guest"}).then(()=>toast("Thanks, we will review it")); };
+$("chips").onclick = e => { const b=e.target.closest(".chip"); if(b){ cat=b.dataset.c; $("hc").value = cat==="All" ? "" : cat; render(); } };
+$("detail").onclick = e => { if(e.target===$("detail")) $("detail").close(); };
+
+/* ---------- post / edit ---------- */
+function resetForm(){
+  $("fAd").reset(); $("aid").value=""; $("tierBox").classList.remove("hide");
+  $("ptitle").textContent="Post an ad"; $("psub").textContent="Pick how long it should run, then add the details."; $("go").textContent="Continue to payment";
+}
+function startEdit(k){
+  const a = ads.find(x=>x[0]===k)?.[1]; if(!a) return;
+  location.hash="#post";
+  $("aid").value=k; $("at").value=a.title; $("ap").value=a.price; $("ad").value=a.desc; $("al").value=a.loc; $("ah").value=a.phone; $("ac").value=a.cat||""; $("ao").value=a.oldPrice||"";
+  $("tierBox").classList.add("hide"); $("ptitle").textContent="Edit ad"; $("psub").textContent="Leave photos empty to keep the current ones."; $("go").textContent="Save changes";
+}
+const tier = () => document.querySelector("[name=tier]:checked");
+$("fAd").onsubmit = async e => {
+  e.preventDefault();
+  if($("aid").value) return publish();
+  $("amt").textContent = (Number(tier().dataset.cost)+($("feat").checked?10000:0)).toLocaleString()+" UGX"; $("pay").showModal();
+};
+$("pay").onclick = e => { if(e.target===$("pay")) $("pay").close(); };
+$("paygo").onclick = async () => { $("paygo").disabled=true; $("pay").close(); await publish(); $("paygo").disabled=false; };
+async function payAd(key){
+  try{ const r = await httpsCallable(fns,"createPayment")({adKey:key}); location.href = r.data.url; }
+  catch(err){ toast("Could not start payment. Open My profile and tap Pay now to try again.", true); }
+}
+async function publish(){
+  const id=$("aid").value, btn=$("go"); btn.disabled=true;
+  try{
+    const imgs = await readMedia($("am").files);
+    const ad = { title:$("at").value.trim(), price:$("ap").value.trim(), desc:$("ad").value.trim(), loc:$("al").value.trim(), phone:$("ah").value.trim(), cat:$("ac").value, oldPrice:$("ao").value.trim() };
+    if(!/\d/.test(ad.price)) throw new Error("Enter a price with numbers, e.g. 50,000 UGX");
+    if(ad.phone.replace(/\D/g,"").length<9) throw new Error("Enter a valid phone number");
+    if(id){ if(imgs.length) ad.images=imgs; await update(ref(db,"ads/"+id), ad); toast("Ad updated"); }
+    else {
+      Object.assign(ad,{ owner:me(), images:imgs, createdAt:Date.now(), expiresAt:0, status:"pending", plan:parseInt(tier().value), wantFeatured:$("feat").checked, featuredUntil:0, views:0, calls:0, wa:0 });
+      const r = await push(ref(db,"ads"),ad); toast("Taking you to Pesapal…"); await payAd(r.key);
+    }
+    resetForm(); location.hash="#home";
+  }catch(err){ toast(err.message||"Something went wrong. Try again.", true); }
+  btn.disabled=false;
+}
+
+/* ---------- profile ---------- */
+async function loadProfile(){
+  const u=me(), d=(await get(child(ref(db),`users/${u}`))).val(); if(!d) return;
+  $("pname").textContent=d.fullName; $("puser").textContent="@"+u; $("en").value=d.fullName; $("ed").value=d.dob||"";
+  if(d.profilePic) $("pimg").src=d.profilePic;
+  const bz=bizList[u]||{}; Object.entries(BF).forEach(([i,f])=>$(i).value=bz[f]||"");
+}
+$("fProfile").onsubmit = async e => {
+  e.preventDefault();
+  try{
+    const up = { fullName:$("en").value.trim()||localStorage.getItem("fullName"), dob:$("ed").value };
+    if($("ep").files[0]) up.profilePic = await compress($("ep").files[0],300);
+    await update(ref(db,"users/"+me()), up);
+    localStorage.setItem("fullName",up.fullName); paintAuth(); loadProfile(); toast("Profile saved");
+  }catch(err){ toast(err.message, true); }
+};
+
+$("contactForm").onsubmit = async e => {
+  e.preventDefault();
+  try{ await push(ref(db,"messages"),{ name:$("cn").value.trim(), email:$("ce").value.trim(), msg:$("cm").value.trim(), at:Date.now() }); e.target.reset(); toast("Message sent. We will reply by email."); }
+  catch{ toast("Could not send. Email us at promohub256@gmail.com", true); }
+};
+const tid = new URLSearchParams(location.search).get("OrderTrackingId");
+if(tid){
+  history.replaceState(null,"",location.pathname+"#profile"); toast("Confirming your payment…");
+  httpsCallable(fns,"confirmPayment")({trackingId:tid}).then(r=>toast(r.data.status==="Completed"?"Payment received. Your ad is live!":"Payment status: "+r.data.status, r.data.status==="Failed"))
+    .catch(()=>toast("Payment is being confirmed. Your ad will go live shortly."));
+}
+onAuthStateChanged(auth, async u => {
+  isAdmin = false;
+  if(u){
+    const name = u.email.split("@")[0]; localStorage.setItem("username",name);
+    try{ const d=(await get(ref(db,"users/"+name))).val(); if(d?.fullName) localStorage.setItem("fullName",d.fullName); }catch{}
+    try{ isAdmin = (await get(ref(db,"admins/"+u.uid))).exists(); }catch{}
+    if(isAdmin){ onValue(ref(db,"reports"),x=>{ reports=x.val()||{}; renderAdmin(); }); onValue(ref(db,"messages"),x=>{ msgs=x.val()||{}; renderAdmin(); }); }
+  } else { localStorage.removeItem("username"); localStorage.removeItem("fullName"); }
+  paintAuth(); route();
+});
+</script>
+</body>
+</html>
